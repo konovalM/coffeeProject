@@ -114,6 +114,46 @@ const FilterTag = styled.section`
 `
 
 const Filter = () => {
+    const data = [
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Brazil',
+            price: '6.99$',
+            id: 1
+        },
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Kenya',
+            price: '6.99$',
+            id: 2
+        },
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Columbia',
+            price: '6.99$',
+            id: 3
+        },
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Brazil',
+            price: '6.99$',
+            id: 4
+        },
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Brazil',
+            price: '6.99$',
+            id: 5
+        },
+        {
+            name: 'AROMISTICO Coffee 1 kg',
+            country: 'Brazil',
+            price: '6.99$',
+            id: 6
+        }
+    ]
+
+
     return (
         <FilterTag>
             <div className="container">
@@ -134,42 +174,16 @@ const Filter = () => {
                     </div>
                 </div>
                 <div className="gridWrapper">
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Brazil</div>
-                        <div className="price">6.99$</div>
-                    </div>
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Kenya</div>
-                        <div className="price">6.99$</div>
-                    </div>
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Columbia</div>
-                        <div className="price">6.99$</div>
-                    </div>
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Brazil</div>
-                        <div className="price">6.99$</div>
-                    </div>
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Brazil</div>
-                        <div className="price">6.99$</div>
-                    </div>
-                    <div className="item">
-                        <img src={coffee} alt="coffee"/>
-                        <div className="name">AROMISTICO Coffee 1 kg</div>
-                        <div className="country">Brazil</div>
-                        <div className="price">6.99$</div>
-                    </div>
+                    {data.map(obj => {
+                        return (
+                            <div className='item' key={obj.id}>
+                                <img src={coffee} alt="coffee"/>
+                                <div className="name">{obj.name}</div>
+                                <div className="country">{obj.country}</div>
+                                <div className="price">{obj.price}</div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </FilterTag>

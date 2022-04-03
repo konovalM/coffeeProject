@@ -29,7 +29,6 @@ const ImgWrapper = styled.div`
 `
 
 const Between = ({margin}) => {
-    console.log(margin)
     return(
         <Wrapper margin={margin}>
             <ImgWrapper>
