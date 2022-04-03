@@ -1,0 +1,23 @@
+.between{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgWrapper{
+    position: relative;
+}
+.imgWrapper::before, .imgWrapper::after{
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgWrapper::before{
+    left: -85px;
+}
+.imgWrapper::after{
+    right: -85px;
+}

@@ -1,0 +1,41 @@
+.footer{
+    padding: 52px 0 20px;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+.listItem{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    margin-left: 40px;
+}
+.listItem a{
+    color: #000;
+}
+.listItem:first-child{
+    margin: 0;
+}
+.firstLink{
+    margin: 0;
+    padding-left: 31px;
+    position: relative;
+}
+.firstLink::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: -22px;
+    background: url("../../images/footerBeans.svg");
+}

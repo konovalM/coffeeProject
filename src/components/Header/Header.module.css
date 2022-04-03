@@ -1,0 +1,96 @@
+.header{
+    padding: 52px 0;
+    min-height: 640px;
+    background: url("../../images/MainBg.jpg")center center / cover no-repeat;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.link{
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 40px;
+}
+
+.link:first-child{
+    margin: 0;
+    padding-left: 31px;
+    position: relative;
+}
+.link:first-child::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -22px;
+    width: 35px;
+    height: 35px;
+    background: url("../../images/coffee-beans.svg");
+}
+
+.title{
+    margin-top: 111px;
+    text-align: center;
+}
+.between{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgWrapper{
+    position: relative;
+}
+.imgWrapper::before, .imgWrapper::after{
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgWrapper::before{
+    left: -85px;
+}
+.imgWrapper::after{
+    right: -85px;
+}
+.descr{
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.secondDescr{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.moreLink{
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.more{
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 3px;
+}
