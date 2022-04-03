@@ -1,40 +1,46 @@
-import s from './Header.module.css'
-import beans2 from '../../images/coffee-beans(2).svg'
+import s from "../Main/Presentation/Presentation.module.css";
+import styled from 'styled-components'
+import beans from '../../images/coffee-beans.svg'
+
+const Nav = styled.nav`
+  a{
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 40px;
+    :first-child{
+      margin: 0;
+      padding-left: 31px;
+      position: relative;
+      ::before{
+        content: '';
+        background: url(${beans});
+        position: absolute;
+        left: 0;
+        top: -22px;
+        width: 35px;
+        height: 35px;
+        
+      }
+    }
+  }
+`
 
 
 const Header = () => {
     return(
-        <header className={s.header}>
-            <div className={s.container}>
-                <nav className={s.nav}>
-                    <a href="#" className={s.link}>
-                        Coffee house
-                    </a>
-                    <a href="#" className={s.link}>
-                        Our coffee
-                    </a>
-                    <a href="#" className={s.link}>
-                        For your pleasure
-                    </a>
-                </nav>
-                <h1 className={s.title}>
-                    Everything You Love About Coffee
-                </h1>
-                <div className={s.between}>
-                    <div className={s.imgWrapper}>
-                        <img src={beans2} alt="beans" className={s.beans}/>
-                    </div>
-                </div>
-                <div className={s.descr}>
-                    We makes every day full of energy and taste
-                </div>
-                <div className={s.secondDescr}>
-                    Want to try our beans?
-                </div>
-                <div className={s.moreLink}>
-                    <a href="#" className={s.more}>More</a>
-                </div>
-            </div>
+        <header>
+            <Nav>
+                <a href="#">
+                    Coffee house
+                </a>
+                <a href="#">
+                    Our coffee
+                </a>
+                <a href="#">
+                    For your pleasure
+                </a>
+            </Nav>
         </header>
     )
 }

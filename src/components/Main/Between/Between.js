@@ -1,4 +1,3 @@
-import s from './Between.module.css'
 import beans from "../../../images/beansBlack.svg";
 import styled from "styled-components";
 

@@ -1,34 +1,13 @@
-.header{
+.presentation{
     padding: 52px 0;
     min-height: 640px;
-    background: url("../../images/MainBg.jpg")center center / cover no-repeat;
+    background: url("../../../images/MainBg.jpg")center center / cover no-repeat;
 }
 
 .container{
     max-width: 1180px;
     padding: 0 20px;
     margin: 0 auto;
-}
-.link{
-    font-size: 12px;
-    line-height: 17px;
-    color: #FFFFFF;
-    margin-left: 40px;
-}
-
-.link:first-child{
-    margin: 0;
-    padding-left: 31px;
-    position: relative;
-}
-.link:first-child::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -22px;
-    width: 35px;
-    height: 35px;
-    background: url("../../images/coffee-beans.svg");
 }
 
 .title{
