@@ -1,6 +1,7 @@
 import s from "../Main/Presentation/Presentation.module.css";
 import styled from 'styled-components'
 import beans from '../../images/coffee-beans.svg'
+import {Link} from "react-router-dom";
 
 const Nav = styled.nav`
   a{
@@ -31,15 +32,15 @@ const Header = () => {
     return(
         <header>
             <Nav>
-                <a href="#">
+                <Link to="/">
                     Coffee house
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/coffee">
                     Our coffee
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/pleasure">
                     For your pleasure
-                </a>
+                </Link>
             </Nav>
         </header>
     )
