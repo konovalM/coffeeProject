@@ -4,7 +4,7 @@ import bg from '../../../images/ourCoffee.jpg'
 
 const CoffeeMain = styled.section`
   padding: 52px 0 84px;
-  background: url(${bg})center center/cover no-repeat;
+  background: url(${(props => props.bg)})center center/cover no-repeat;
   div.container{
     max-width: 1180px;
     padding: 0 20px;
@@ -19,12 +19,12 @@ const CoffeeMain = styled.section`
   }
 `
 
-const OurCoffeeMain = () => {
+const OurCoffeeMain = ({bg, title}) => {
     return (
-        <CoffeeMain>
+        <CoffeeMain bg={bg}>
             <div className="container">
                 <Header/>
-                <h2>Our Coffee</h2>
+                <h2>{title}</h2>
             </div>
         </CoffeeMain>
     )

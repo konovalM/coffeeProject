@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import photo from '../../../images/photo.jpg'
 import Between from "../../Main/Between/Between";
 
 const OurBeansSection = styled.section`
@@ -46,7 +45,7 @@ const OurBeansSection = styled.section`
 `
 
 
-const OurBeans = () => {
+const OurBeans = ({photo, title, topText, bottomText}) => {
     return (
         <OurBeansSection>
             <div className="container">
@@ -55,16 +54,13 @@ const OurBeans = () => {
                         <img src={photo} alt="girl with coffee"/>
                     </div>
                     <div className="right">
-                        <h3>About our beans</h3>
+                        <h3>{title}</h3>
                         <Between margin='20'/>
                         <div className="descr">
-                            Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+                            {topText}
                             <br/>
                             <br/>
-                            Afraid at highly months do things on at. Situation recommend objection do intention
-                            so questions. As greatly removed calling pleased improve an. Last ask him cold feel
-                            met spot shy want. Children me laughing we prospect answered followed. At it went
-                            is song that held help face.
+                            {bottomText}
                         </div>
                     </div>
                 </div>

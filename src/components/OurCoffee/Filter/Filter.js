@@ -32,6 +32,7 @@ const FilterTag = styled.section`
       width: 180px;
       height: 30px;
       border: none;
+      padding: 0 10px;
     }
     .input::placeholder{
       font-size: 12px;
@@ -63,6 +64,7 @@ const FilterTag = styled.section`
       box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
       border-radius: 4px 0px 0px 4px;
       margin-right: 5px;
+      cursor: pointer;
       :last-child{
         margin: 0;
       }
